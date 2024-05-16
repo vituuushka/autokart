@@ -1,0 +1,2461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.svg" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Nastroyker K1 gulp template</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://luzhetskiy.github.io/stroyker-k1-html-dev/libs/fancy-box/fancy-box.css" />
+  <link rel="stylesheet" href="https://luzhetskiy.github.io/stroyker-k1-html-dev/libs/mmenu/mmenu.css" />
+  <!-- <link rel="stylesheet" href="https://luzhetskiy.github.io/stroyker-k1-html-dev/css/styles.css" /> -->
+  <link rel="stylesheet" href="https://luzhetskiy.github.io/stroyker-k1-html-dev/css/main.css" />
+  <script defer src="https://luzhetskiy.github.io/stroyker-k1-html-dev/libs/jquery/jquery.js"></script>
+  <script defer src="https://luzhetskiy.github.io/stroyker-k1-html-dev/libs/owl-carousel/owl-carousel.js"></script>
+  <script defer src="https://luzhetskiy.github.io/stroyker-k1-html-dev/libs/slick/slick.js"></script>
+  <script defer src="https://luzhetskiy.github.io/stroyker-k1-html-dev/libs/mmenu/mmenu.js"></script>
+  <!-- <script defer src="https://luzhetskiy.github.io/stroyker-k1-html-dev/js/scripts.js"></script> -->
+  <script defer src="https://luzhetskiy.github.io/stroyker-k1-html-dev/js/main.js"></script>
+  
+
+
+  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+  <link rel="stylesheet" href="./css/styles-autokart.css" />
+  <!-- <script defer src="./js/scripts.js"></script> -->
+</head>
+
+<body>
+  <header>
+    <section class="header-default">
+      <div class="top-header">
+        <div class="container">
+          <div class="top-header__content">
+            <div class="top-header__content-left">
+              <a href="/" class="logo">
+                <img src="./images/logo-autokart.svg" alt="" />
+              </a>
+              <div class="main-menu">
+                <ul>
+                  <li>
+                    <a title="Покупателям" href="/clients/"> Акции </a>
+                  </li>
+                  <li>
+                    <a title="Покупателям" href="/clients/"> Оплата и доставка </a>
+                  </li>
+                  <li>
+                    <a title="Покупателям" href="/clients/"> Возврат </a>
+                  </li>
+                  <li>
+                    <a title="Контакты" href="/contacts/"> Контакты </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="top-header__content-right">
+              <div class="header-phones top-header__phones">
+                <div class="header-phones__inner">+7 987 443-37-77</div>
+              </div>
+
+              <a data-fancybox="callme-modal" data-src="#callme-modal" href="javascript:;"
+                class="btn-border callme-button mobile-hide button-theme button-theme_callme">Заказать звонок</a>
+            </div>
+            <div class="burger-menu">
+              <div class="burger"></div>
+            </div>
+            <div class="mobile-menu">
+              <div class="mobile-menu__item mobile-show">
+                <div class="header-user">
+                  <a href="/user/profile/" class="header-user__link">
+                    <span class="icon">
+                      <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M22.6663 25.9066V23.2399C22.6663 21.8255 22.1044 20.4689 21.1042 19.4687C20.104 18.4685 18.7475 17.9066 17.333 17.9066H6.66634C5.25185 17.9066 3.8953 18.4685 2.8951 19.4687C1.89491 20.4689 1.33301 21.8255 1.33301 23.2399V25.9066"
+                          stroke="#4B4B4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M11.9993 12.5733C14.9449 12.5733 17.3327 10.1855 17.3327 7.23995C17.3327 4.29443 14.9449 1.90662 11.9993 1.90662C9.05383 1.90662 6.66602 4.29443 6.66602 7.23995C6.66602 10.1855 9.05383 12.5733 11.9993 12.5733Z"
+                          stroke="#4B4B4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    info@nastroyker.ru
+                  </a>
+                </div>
+              </div>
+
+              <div class="mobile-menu__item mobile-show"></div>
+              <div class="mobile-menu__item mobile-show">
+                <div class="header-search search--box">
+                  <input name="q" type="text" autocomplete="off" class="search_input_mobile" value="" data-min-chars="3"
+                    data-search-url="/search" placeholder="Поиск..." />
+                  <button>
+                    <svg class="icon-svg">
+                      <use xlink:href="#search-icon"></use>
+                    </svg>
+                  </button>
+                  <div class="header-search-results" id="search-result-mob" style="display: none"></div>
+                </div>
+              </div>
+              <div class="mobile-ul">
+                <ul class="catalog-menu-mobile">
+                  <li class="catalog-opened mobile-show">
+                    <a>
+                      Проекты домов
+                      <svg class="icon">
+                        <use xlink:href="#tab-arrow"></use>
+                      </svg>
+                    </a>
+                    <ul class="submenu">
+                      <li class="menu-item">
+                        <a href="/catalog/kategoriya-tovarov-1/">
+                          Проекты домов до 150м2
+                          <svg class="icon">
+                            <use xlink:href="#tab-arrow"></use>
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li class="menu-item">
+                        <a href="/catalog/kategoriya-tovarov-2/">
+                          Проекты домов до 300м2
+                          <svg class="icon">
+                            <use xlink:href="#tab-arrow"></use>
+                          </svg>
+                        </a>
+                      </li>
+
+                    </ul>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <a href="#">
+                      Сотрудничество
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Доставка
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Акции
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Партнеры
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Контакты
+                    </a>
+                  </li>
+
+                  <li class="menu-item">
+                    <a class="menu-item__link" href="/catalog/kategoriya-tovarov-2/">
+                      <svg width="24" height="22" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12.0009 2.23701C14.6697 -0.158936 18.7937 -0.0794119 21.3648 2.49603C23.9346 5.07261 24.0233 9.17605 21.6329 11.8526L11.9987 21.5L2.3667 11.8526C-0.0236744 9.17605 0.0660787 5.06579 2.63483 2.49603C5.20812 -0.0760038 9.32425 -0.162344 12.0009 2.23701Z"
+                          fill="#2363D1" />
+                      </svg>
+                      Отложенные товары
+                    </a>
+                  </li>
+
+                  <li class="menu-item">
+                    <a class="menu-item__link" href="/catalog/kategoriya-tovarov-2/">
+                      <svg width="24" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.778 11H17.1113V22.0001H20.778V11Z" fill="#2363D1" />
+                        <path d="M3.6667 5.49993H0V22.0001H3.6667V5.49993Z" fill="#2363D1" />
+                        <path d="M12.2223 -0.0001297H8.55564V22.0001H12.2223V-0.0001297Z" fill="#2363D1" />
+                      </svg>
+                      Сравнить товары
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mobile-phone  mobile-show">
+                <a href="tel:+79372101220">+7 987 443-37-77</a>
+              </div>
+
+              <div class="mobile-btn mobile-show">
+                <a class="btn btn--rubber button-theme button-theme_primary" data-fancybox="callme-modal-mobile"
+                  data-src="#callme-modal" href="javascript:;">
+                  Заказать звонок
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-body">
+        <div class="container">
+          <div class="header-body__content">
+            <a class="catalog-inner-btn">
+              <div class="burger-catalog">
+                <div class="burger"></div>
+              </div>
+              Каталог продукции
+            </a>
+            <div class="header-search mobile-hide header-search--inner">
+              <input name="q" type="text" autocomplete="off" class="search_input" value="" data-min-chars="3"
+                data-search-url="/search" placeholder="Введите название, бренд..." />
+              <button>
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9 17.9066C13.4183 17.9066 17 14.3249 17 9.90662C17 5.48834 13.4183 1.90662 9 1.90662C4.58172 1.90662 1 5.48834 1 9.90662C1 14.3249 4.58172 17.9066 9 17.9066Z"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M19.0004 19.9066L14.6504 15.5566" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+
+              </button>
+              <div id="search-result-container" style="display: none" class="header-search-results"></div>
+            </div>
+            <div class="header-body__content-right">
+              <div class="header-user mobile-hide">
+                <a href="/user/profile/" class="header-user__link">
+                  <span class="icon">
+                    <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M22.6663 25.9066V23.2399C22.6663 21.8255 22.1044 20.4689 21.1042 19.4687C20.104 18.4685 18.7475 17.9066 17.333 17.9066H6.66634C5.25185 17.9066 3.8953 18.4685 2.8951 19.4687C1.89491 20.4689 1.33301 21.8255 1.33301 23.2399V25.9066"
+                        stroke="#4B4B4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M11.9993 12.5733C14.9449 12.5733 17.3327 10.1855 17.3327 7.23995C17.3327 4.29443 14.9449 1.90662 11.9993 1.90662C9.05383 1.90662 6.66602 4.29443 6.66602 7.23995C6.66602 10.1855 9.05383 12.5733 11.9993 12.5733Z"
+                        stroke="#4B4B4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+
+                  info@nastroyker.ru
+                </a>
+              </div>
+              <a href="/comparison/" class="header-comparison">
+                <i class="icon">
+                  <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4189 22.5733V9.23999" stroke="#4B4B4B" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M17.752 22.5733V1.23999" stroke="#4B4B4B" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M1.75195 22.5733L1.75195 3.90662" stroke="#4B4B4B" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.08496 22.5733L7.08496 11.9066" stroke="#4B4B4B" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+
+                </i>
+                <span class="comparison-number">0</span>
+              </a>
+              <a href="/cart/" class="header-cart">
+                <i class="icon">
+                  <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.9993 29.2399C12.7357 29.2399 13.3327 28.643 13.3327 27.9066C13.3327 27.1702 12.7357 26.5732 11.9993 26.5732C11.263 26.5732 10.666 27.1702 10.666 27.9066C10.666 28.643 11.263 29.2399 11.9993 29.2399Z"
+                      fill="#4B4B4B" stroke="#4B4B4B" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M26.6663 29.2399C27.4027 29.2399 27.9997 28.643 27.9997 27.9066C27.9997 27.1702 27.4027 26.5732 26.6663 26.5732C25.93 26.5732 25.333 27.1702 25.333 27.9066C25.333 28.643 25.93 29.2399 26.6663 29.2399Z"
+                      fill="#4B4B4B" stroke="#4B4B4B" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M1.33301 1.23999H6.66634L10.2397 19.0933C10.3616 19.7072 10.6956 20.2586 11.1831 20.6511C11.6706 21.0435 12.2806 21.252 12.9063 21.24H25.8663C26.4921 21.252 27.1021 21.0435 27.5896 20.6511C28.0771 20.2586 28.4111 19.7072 28.533 19.0933L30.6663 7.90666H7.99967"
+                      stroke="#4B4B4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+
+                </i>
+                <span class="cart-number">12</span>
+              </a>
+            </div>
+            <div class="header-fixed-content">
+              <div class="header-phones top-header__phones">
+                <div class="header-phones__inner"></div>
+              </div>
+
+              <a class="btn-border callme-button mobile-hide button-theme button-theme_callme"
+                data-fancybox="callme-modal-1" data-src="#callme-modal" href="javascript:;">
+                Заказать звонок
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-header-content">
+          <div class="catalog-box">
+            <div class="container">
+              <ul class="link--arrow-left">
+                <li>
+                  <a href="/catalog/kategoriya-tovarov-1/">Проекты домов до 150м2</a>
+                </li>
+
+                <li>
+                  <a href="/catalog/kategoriya-tovarov-2/">Проекты домов до 300м2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="product-set-slider set-hit">
+      <div class="container">
+        <div class="section__bg set-hit__bg">
+          <h2 class="product-set__title"><span>Хиты</span> продаж</h2>
+
+          <div class="slider-constructor slick-dotted" data-rows="2" data-slides="1" data-md-slides="3"
+            data-lg-slides="3" data-xl-slides="5">
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">
+                      Под заказ
+                    </div>
+                  </div>
+
+                  <div class="product-card-v2__buttons buttons-not-available">
+                    <a href="#question-main" data-product-code="001" data-product-name="Товар 1"
+                      class="st-button st-button_muted st-button_not-availbe not-available">
+                      <p class="st-button__text">
+                        <span class="st-button__title">Узнать цену</span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-set__button set-hit__button">
+            <a class="catalog-btn" href="/catalog">Каталог</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-set-slider set-popular-tires">
+      <div class="container">
+        <div class="section__bg set-popular-tires__bg">
+          <h2 class="product-set__title"><span>Популярные</span> шины</h2>
+
+          <div class="slider-constructor slick-dotted" data-rows="2" data-slides="1" data-md-slides="3"
+            data-lg-slides="3" data-xl-slides="5">
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">
+                      Под заказ
+                    </div>
+                  </div>
+
+                  <div class="product-card-v2__buttons buttons-not-available">
+                    <a href="#question-main" data-product-code="001" data-product-name="Товар 1"
+                      class="st-button st-button_muted st-button_not-availbe not-available">
+                      <p class="st-button__text">
+                        <span class="st-button__title">Узнать цену</span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-set__button set-popular-tires__button">
+            <a class="catalog-btn" href="/catalog">Все шины</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-set-slider set-discs">
+      <div class="container">
+        <div class="section__bg set-discs__bg">
+          <h2 class="product-set__title"><span>Диски</span> выгодно</h2>
+
+          <div class="slider-constructor slick-dotted" data-rows="2" data-slides="1" data-md-slides="3"
+            data-lg-slides="3" data-xl-slides="5">
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">
+                      Под заказ
+                    </div>
+                  </div>
+
+                  <div class="product-card-v2__buttons buttons-not-available">
+                    <a href="#question-main" data-product-code="001" data-product-name="Товар 1"
+                      class="st-button st-button_muted st-button_not-availbe not-available">
+                      <p class="st-button__text">
+                        <span class="st-button__title">Узнать цену</span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-v2 product-card-v2_hover" data-custom-interaction="data-custom-interaction">
+              <a class="product-card-v2__link" href="/catalog/product/tovar-1/"></a>
+              <div class="product-card-v2__image">
+                <div class="image image_contain">
+                  <img src="./images/tire-product.png" alt="Товар 1" />
+                </div>
+
+                <div class="product-card-v2__rating"></div>
+
+                <div class="product-card-v2__labels">
+                  <div class="card-label card-label_style-sale product-card-v2__label">
+                    Sale
+                  </div>
+                  <div class="card-label product-item__flag product-item__flag--new">New</div>
+                </div>
+                <div class="card-label product-card-sell-badge product-card-sell-badge_bottom">-15%</div>
+              </div>
+
+              <div class="product-card-v2__content">
+                <div class="product-card-v2__title">Шина Hankook Ventus Prime 4 SUV K135A 225/65 R17 102H</div>
+                <div class="product-item__status product-item__status--many">Кол-во: <span>Много</span></div>
+                <div class="product-card-v2__content-bottom">
+                  <div class="product-card-v2__pricing">
+                    <div class="product-card-v2__pricing-txt price-text-ordinary">обычная цена</div>
+                    <div class="product-card-v2__price text-color-accent">
+                      25 600
+                    </div>
+                    <div class="product-card-v2__pricing-txt">цена онлайн</div>
+                    <div class="product-card-v2__price">19 500 <span>₽</span></div>
+                  </div>
+                  <div class="product-card-v2__buttons buttons-cart">
+                    <div class="input-number">
+                      <div class="order-down"></div>
+                      <input type="number" min="1" max="123" step="1" value="1" id="number" required="" />
+                      <div class="order-up"></div>
+                    </div>
+                    <a href="#" class="st-button st-button_primary st-button_add-to-cart">
+                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.59961 22C10.1519 22 10.5996 21.5523 10.5996 21C10.5996 20.4477 10.1519 20 9.59961 20C9.04732 20 8.59961 20.4477 8.59961 21C8.59961 21.5523 9.04732 22 9.59961 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.5996 22C21.1519 22 21.5996 21.5523 21.5996 21C21.5996 20.4477 21.1519 20 20.5996 20C20.0473 20 19.5996 20.4477 19.5996 21C19.5996 21.5523 20.0473 22 20.5996 22Z"
+                          fill="white" stroke="white" stroke-width="1.875" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M1.59961 1H5.59961L8.27961 14.39C8.37105 14.8504 8.62152 15.264 8.98715 15.5583C9.35279 15.8526 9.81031 16.009 10.2796 16H19.9996C20.4689 16.009 20.9264 15.8526 21.2921 15.5583C21.6577 15.264 21.9082 14.8504 21.9996 14.39L23.5996 6H6.59961"
+                          stroke="white" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <p class="st-button__text">
+                        <span class="st-button__sub-title"></span>
+                        <span class="st-button__title"></span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-set__button set-discs__button">
+            <a class="catalog-btn" href="/catalog">Все диски</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-set-slider set-articles">
+      <div class="container">
+        <div class="section__bg set-articles__bg">
+          <h2 class="product-set__title"><span>Экспертные</span> статьи</h2>
+
+          <div class="slider-constructor slick-dotted" data-rows="2" data-slides="1" data-md-slides="3"
+            data-lg-slides="3" data-xl-slides="4">
+            <div class="item">
+              <a href="">
+                <span>
+                  <img src="./images/article-1.png" alt="">
+                </span>
+                <span>Как установить шины на колеса?</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <span>
+                  <img src="./images/article-1.png" alt="">
+                </span>
+                <span>Как установить шины на колеса?</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <span>
+                  <img src="./images/article-1.png" alt="">
+                </span>
+                <span>Как установить шины на колеса?</span>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <span>
+                  <img src="./images/article-1.png" alt="">
+                </span>
+                <span>Как установить шины на колеса?</span>
+              </a>
+            </div>
+          </div>
+          <div class="product-set__button set-discs__button">
+            <a class="catalog-btn" href="/catalog">Все статьи</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
