@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://luzhetskiy.github.io/stroyker-k1-html-dev/libs/fancy-box/fancy-box.css" />
   <link rel="stylesheet" href="https://luzhetskiy.github.io/stroyker-k1-html-dev/libs/mmenu/mmenu.css" />
   <!-- <link rel="stylesheet" href="https://luzhetskiy.github.io/stroyker-k1-html-dev/css/styles.css" /> -->
-  <link rel="stylesheet" href="https://luzhetskiy.github.io/stroyker-k1-html-dev/css/main.css" />
+  <!-- <link rel="stylesheet" href="https://luzhetskiy.github.io/stroyker-k1-html-dev/css/main.css" /> -->
   <script defer src="https://luzhetskiy.github.io/stroyker-k1-html-dev/libs/jquery/jquery.js"></script>
   <script defer src="https://luzhetskiy.github.io/stroyker-k1-html-dev/libs/owl-carousel/owl-carousel.js"></script>
   <script defer src="https://luzhetskiy.github.io/stroyker-k1-html-dev/libs/slick/slick.js"></script>
@@ -22,9 +22,9 @@
 
 
 
-  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+  <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/styles-autokart.css" />
-  <!-- <script defer src="./js/scripts.js"></script> -->
+  <script defer src="./js/scripts.js"></script>
 </head>
 
 <body>
@@ -303,6 +303,55 @@
     </section>
   </header>
   <main>
+    <section class="banner-under-offer">
+      <div class="container">
+        <div
+          class="b-multirows-row d-grid row-gap-25 column-gap-grid grid-columns-2 grid-columns-sm-2 grid-columns-md-3 grid-columns-lg-3">
+          <div class="content-background-box image-zoom">
+            <div class="content-background-box__container">
+              <div class="content-background-box__text-content">
+                <div class="banner-item__container">
+                  <a class="banner-item__link" href="/catalog/sendvich-paneli-stenovye/">
+                    <div class="banner-item__image banner-item__image-1"><img src="./images/under-offer-1.svg"></div>
+                    <div class="banner-item__text"><div>Шиномонтаж</div>
+                      Со скидкой 10%</div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="content-background-box image-zoom">
+            <div class="content-background-box__container">
+              <div class="content-background-box__text-content">
+                <div class="banner-item__container">
+                  <a class="banner-item__link" href="/catalog/sendvich-paneli-stenovye/">
+                    <div class="banner-item__image banner-item__image-2"><img src="./images/under-offer-2.svg"></div>
+                    <div class="banner-item__text"><div>Нужна помощь</div>
+                      в подборе?</div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="content-background-box image-zoom">
+            <div class="content-background-box__container">
+              <div class="content-background-box__text-content">
+                <div class="banner-item__container">
+                  <a class="banner-item__link" href="/catalog/sendvich-paneli-stenovye/">
+                    <div class="banner-item__image banner-item__image-3"><img src="./images/under-offer-3.svg"></div>
+                    <div class="banner-item__text"><div>Бесплатная доставка</div>
+                      при покупке комплекта</div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="product-set-slider set-hit">
       <div class="container">
         <div class="section__bg set-hit__bg">
@@ -2465,6 +2514,63 @@
           </div>
           <div class="product-set__button set-discs__button">
             <a class="catalog-btn" href="/catalog">Все статьи</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-dark feedback-form">
+      <div class="container">
+        <div class="question-main" id="question-main">
+          <div class="question-form">
+            <span class="content-title center h2"><span>Остались</span> вопросы?</span>
+            <form action="/crm/message/" method="post" id="feedback-message-request-form" onsubmit="">
+              <div class="question-form-top">
+                <input type="hidden" name="csrfmiddlewaretoken"
+                  value="vAIkE0c5pfnzOIo62JgqyUirpOOaiZJKOFlqPiE0efDPluqXNez9kYQQp3lCYb9E" />
+                <div class="question-form__column">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="name" autocomplete="off" required="" />
+                    <label for="name" class="label-name">
+                      <span class="content-name"> Имя* </span>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <input type="phone" class="form-control phone" name="phone" autocomplete="off" required=""
+                      maxlength="18" />
+                    <label for="phone" class="label-name">
+                      <span class="content-name"> Телефон* </span>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <input type="mail" class="form-control" name="email" autocomplete="off" required="" />
+                    <label for="text" class="label-name">
+                      <span class="content-name"> E-mail* </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="question-form__column">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" autocomplete="off" required=""></textarea>
+                    <label for="message" class="label-name">
+                      <span class="content-name"> Комментарий* </span>
+                    </label>
+                  </div>
+                  <input type="hidden" name="url" id="id_url" />
+
+                  <button type="submit" class="btn btn--main-min">Отправить</button>
+                </div>
+              </div>
+              <div class="question-form-bottom">
+                <div class="form-group">
+                  <input type="checkbox" class="form-control form-control__checkbox" name="confidence"
+                    autocomplete="off" required="" />
+                  <span class="custom-checkbox"></span>
+                  <label for="confidence" class="label-name">
+                    Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности
+                  </label>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
