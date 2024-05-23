@@ -281,6 +281,24 @@ body {
   right: 0;
   bottom: 0;
 }
+.home-banner__slide .image::before {
+  content: '15%';
+  background: #fff;
+  position: absolute;
+  width: 20%;
+  aspect-ratio: 69/32;
+  border-radius: 30px;
+  font-family: Montserrat-ExtraBoldItalic;
+  font-size: 16px;
+  line-height: 19.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 15%;
+  top: 42%;
+  z-index: 1;
+  transform: rotate(16deg);
+}
 .home-banner__title {
   font-family: Montserrat-ExtraBoldItalic;
   font-size: 26px;
