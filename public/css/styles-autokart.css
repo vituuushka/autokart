@@ -197,6 +197,7 @@ body {
   margin-left: 16px;
   display: flex;
   gap: 15px;
+  position: relative;
 }
 
 .header-comparison svg {
@@ -231,24 +232,30 @@ body {
 }
 
 @media (max-width: 767px) {
-
+  .header-cart {
+    margin-left: 25px;
+  }
   .header-comparison span.comparison-number,
   .header-cart span.cart-number {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin-right: 0;
     font-size: 8px;
     position: absolute;
     top: -5px;
-    right: -10px;
-    background: #d74853;
+    right: -15px;
+    
   }
-
-  .header-comparison .icon {
+  .header-comparison span.comparison-number {
+    background: #000;
+  }
+  .header-comparison .icon,
+  .header-cart .icon {
     left: -4px;
     top: 0px;
     position: relative;
-    height: 30px;
+    height: 24px;
+    width: 24px;
   }
 }
 
