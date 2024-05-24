@@ -235,6 +235,7 @@ body {
   .header-cart {
     margin-left: 25px;
   }
+
   .header-comparison span.comparison-number,
   .header-cart span.cart-number {
     width: 18px;
@@ -244,11 +245,13 @@ body {
     position: absolute;
     top: -5px;
     right: -15px;
-    
+
   }
+
   .header-comparison span.comparison-number {
     background: #000;
   }
+
   .header-comparison .icon,
   .header-cart .icon {
     left: -4px;
@@ -265,22 +268,26 @@ body {
   border-radius: 25px;
   position: relative;
 }
+
 .home-banner__slide {
   height: 465px;
 }
+
 .home-banner .slide-content {
   background: transparent;
   right: 230px;
   top: 46px;
   margin: 0;
-  
+
 }
+
 .home-banner__slide .image {
   position: absolute;
   width: 30%;
   right: 0;
   bottom: 0;
 }
+
 .home-banner__slide .image::before {
   content: '15%';
   background: #fff;
@@ -299,6 +306,7 @@ body {
   z-index: 1;
   transform: rotate(16deg);
 }
+
 .home-banner__title {
   font-family: Montserrat-ExtraBoldItalic;
   font-size: 26px;
@@ -306,16 +314,19 @@ body {
   color: #fff;
   text-transform: uppercase;
 }
+
 .home-banner__title span {
   color: #000;
   display: block;
 }
+
 .home-banner__subtitle {
   font-family: Montserrat-Medium;
   font-size: 16px;
   line-height: 21px;
   color: #fff;
 }
+
 .home-banner__button {
   width: 187px;
   height: 48px;
@@ -335,9 +346,11 @@ body {
   border: 1px solid #FFFFFF;
   color: #fff;
 }
+
 .home-banner__slide {
   position: relative;
 }
+
 .home-banner__container:after {
   content: '';
   background: url(../images/home-banner-pattern.svg) no-repeat;
@@ -349,6 +362,7 @@ body {
   height: auto;
   aspect-ratio: 293/372;
 }
+
 @media(min-width: 768px) {
   .home-banner .slide-content {
     max-width: 385px;
@@ -356,41 +370,162 @@ body {
     left: auto;
   }
 }
+
 @media(min-width: 992px) and (max-width: 1279px) {
   .home-banner .slide-content {
-    right: 40px;
+    right: 0px;
+    max-width: 320px;
+    padding-left: 0;
   }
 }
+
 @media(min-width: 768px) and (max-width: 991px) {
   .home-banner .slide-content {
-    right: 20px;
+    right: auto;
+    padding: 20px 40px;
   }
+  .home-banner__slide {
+    height: 350px;
 }
+.home-banner__slide .image {
+  width: 310px;
+  bottom: 70px;
+}
+.home-banner__container:after {
+  width: 35%;
+}
+}
+
 .owl-nav {
   display: none !important;
 }
+
 .owl-dots {
   display: none !important;
 }
+
 @media(max-width: 767px) {
   .home-banner__button {
     width: 100%;
   }
+
   .home-banner .slide-content {
     max-width: 100%;
     padding: 0;
     align-items: stretch;
     padding: 0 20px 0 20px;
   }
-  
+
   .home-banner__slide .image {
     width: 350px;
   }
+
   .home-banner__slide {
     height: 500px;
   }
+
   .home-banner__container:after {
     width: 245px;
+  }
+}
+
+
+/* tire filter */
+
+.tire-container {
+  position: absolute;
+  z-index: 10;
+  width: 540px;
+  top: 40px;
+  left: 40px;
+  
+}
+.tire-container .tabsgroup {
+  margin-bottom: 0px;
+}
+/* .tab-content {
+  width: 540px;
+} */
+@media(max-width: 767px) {
+  .tire-container .tab-content {
+    width: 100%;
+  }
+}
+.parameter-select .selected-option:before {
+  background: url(../images/filter-blue-arrow.svg);
+  background-size: cover;
+}
+.parameter-select.disabled .selected-option:before {
+  background: url(../images/filter-disabled-arrow.svg);
+  background-size: cover;
+}
+/* .tabs-slider-mobile {
+  display: block;
+}
+.tire-container .tabs {
+  display: none;
+} */
+.tire-container .tabs-slider-mobile .slider-item {
+  width: 115px !important;
+}
+.tire-container .tabs li {
+  background: #fff;
+}
+.tire-container .tab-content {
+  padding: 115px 32px 32px 32px;
+  border-radius: 20px;
+}
+.tire-container .tabs {
+  position: absolute;
+  padding: 32px;
+  gap: 5px;
+}
+.tire-container .tabs li {
+  border: 1px solid #C5C5C5;
+  border-radius: 15px;
+  height: 59px;
+  font-family: Montserrat-Medium;
+  font-size: 16px;
+  line-height: 16.22px;
+  padding: 10px 15px;
+  width: 115px;
+  text-align: left;
+  
+}
+
+.slider-item__bottom {
+  align-items: center;
+}
+.slider-item__title {
+  color: #333333;
+}
+.slider-item__subtitle {
+  font-family: Montserrat-Regular;
+  font-size: 12px;
+  line-height: 16.8px;
+}
+.tire-container .tabs li.active {
+  border: 1px solid #BD3A34;
+}
+.tabs-content {
+  position: relative;
+}
+@media(max-width: 991px) {
+  .tire-container {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 40px 40px 0 40px;
+  }
+  .tire-container .tabs li {
+    width: 192px;
+  }
+}
+@media(max-width: 767px) {
+  .tabs-slider-mobile {
+    width: 100%;
+    position: absolute;
   }
 }
 /* banner under offer */
